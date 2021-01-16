@@ -1,10 +1,29 @@
-_MQ2_
-# MQ2
+ARDUINO UNO 
+
+Arduino Uno adalah board mikrokontroler berbasis ATmega328 (datasheet). Memiliki 14 pin input dari output digital  dimana 6 pin input tersebut dapat digunakan sebagai output PWM dan 6 pin input analog, 16 MHz osilator kristal, koneksi USB, jack power, ICSP header, dan tombol reset. Untuk mendukung mikrokontroler agar dapat digunakan, cukup hanya menghubungkan Board Arduino Uno ke komputer dengan menggunakan kabel USB atau listrik dengan AC yang-ke adaptor-DC atau baterai untuk menjalankannya.
+
+Summary :
+Microcontroller ATmega328
+Operasi dengan daya 5V Voltage
+Input Tegangan (disarankan) 7-12V
+Input Tegangan (batas) 6-20V
+Digital I / O Pins 14 (dimana 6 memberikan output PWM)
+Analog Input Pin 6
+DC Lancar per I / O Pin 40 mA
+Saat 3.3V Pin 50 mA DC
+Flash Memory 32 KB (ATmega328) yang 0,5 KB digunakan oleh bootloader
+SRAM   2 KB (ATmega328)
+EEPROM 1 KB (ATmega328)
+Clock Speed ​16 MHz
+
+
+---------------------------------------------------------------------------------
+MQ2 SENSOR
 
 Sensor gas merupakan jenis sensor yang bertujuan untuk mengukur kandungan senyawa gas polutan tertentu yang berada pada udara bebas, seperti karbon-dioksida (CO2), karbon-monosikda (CO), hidrokarbon (LPG, LNG) , dan lain-lain. Pada sensor gas terdapat heater yang berfungsi untuk memicu sensor dapat bekerja mendeteksi objektivas tipe gas yang akan disensing.
 Pada sensor juga terdapat nilai resistansi yang berubah – ubah sesuai dengan nilai kepekatan gas yang akan disensing. Semakin tinggi nilai kepekatan  gas yang tersensing di udara bebas, semakin rendah nilai resistansi. Dan apabila semakin rendah nilai kepekatan gas yang tersensing di udara bebas, semakin tinggi nilai resistansi. MQ-2 yaitu sensor yang berfungsi untuk mendeteksi gas asap rokok dan gas yang mudah terbakar. Modul sensor ini sensitif untuk berbagai gas dan dapat digunakan pada ruangan dengan suhu kamar. Output dari modul ini adalah sinyal analog dan dapat dibaca dengan input analog (ADC) Arduino dan Data out yang memiliki keluaran logika 1 dan 0.
 
-Karakteristik sensor MQ-2
+Karakteristik sensor MQ-2 :
 1. Dapat mendeteksi gas LPG, i-butana, propana, metana, alkohol, hidrogen dan asap
 2. Memiliki dual signal output (analog output, and TTL level output)
 3. Range tegangan analog keluaran antara 0~5Vdc
@@ -15,3 +34,18 @@ Karakteristik sensor MQ-2
 8. Terdapat Potentiometer
 9. Dimensi module 32 x 20 mm
 
+--------------------------------------------------------------------------------
+
+FLAME SENSOR
+
+Flame sensor merupakan sensor yang mempunyai fungsi sebagai pendeteksi nyala api yang dimana api tersebut memiliki panjang gelombang antara 760nm – 1100nm. Sensor ini menggunakan infrared sebagai tranduser dalam mensensing kondisi nyala api.
+
+Cara Kerja :
+Cara kerja sensor ini yaitu dengan mengidentifikasi atau mendeteksi  nyala api dengan menggunakan metode optik. Pada sensor ini menggunakan tranduser yang berupa infrared (IR) sebagai sensing sensor. Tranduser ini digunakan untuk mendeteksi akan penyerapan cahaya pada panjang gelombang tertentu.
+Yang dimana memungkinkan alat ini untuk membedakan antara spectrum cahaya pada api dengan spectrum cahaya lainnya seperti spectrum cahaya lampu.
+
+Fitur dari flame sensor :
+    1. Tegangan operasi antara 3,3 – 5 Vdc
+    2. Terdapat 2 output yaitu digital output dan analog output yang berupa tegangan
+    3. Sudah terpackage dalam bentuk modul
+    4. Terdapat potensiometer sebagai pengaturan sensitivitas sensor dalam mensensing

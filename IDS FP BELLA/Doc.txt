@@ -49,3 +49,8 @@ Fitur dari flame sensor :
     2. Terdapat 2 output yaitu digital output dan analog output yang berupa tegangan
     3. Sudah terpackage dalam bentuk modul
     4. Terdapat potensiometer sebagai pengaturan sensitivitas sensor dalam mensensing
+
+----------------------------------------------------------------------
+TWILIO
+
+Twilio adalah sebuah platform berbasis cloud yang menawarkan pengembang API kuat untuk layanan telepon untuk membuat dan menerima panggilan telepon. Dengan menggunakan API Anda juga dapat mengirim dan menerima pesan teks pemrograman yang sangat nyaman bagi pengembang yang perlu menggunakan layanan telepon dan pesan SMS

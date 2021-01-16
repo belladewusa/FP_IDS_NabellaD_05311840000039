@@ -1,52 +1,17 @@
-IDE :
+_MQ2_
+# MQ2
 
-Untuk mendeteksi aktifitas mencurigakan atau aktifitas yang dianggap berbahaya kebanyakan orang akan berpikir jika itu berasal dari internal seperti jaringan computer. Padahal hal lain yang membahayakan bisa berasal dari lingkungan fisik dimana kita menyimpan database/server/dan peralatan lainnya yang dianggap sebagai smber daya fisik seperti dalam pengoperasian jaringan computer. Jika semua itu tidak dilindungi tentu akan menyebabkan kerusakan fisik yang dapat menghambat operasional penggunaannya. Salah satu problem yang memungkinkan adalah kebakaran. Oleh karena itu dalam final project kali ini saya akan membawa topik tersebut. Output dari project ini mashi berbentuk prototype
+Sensor gas merupakan jenis sensor yang bertujuan untuk mengukur kandungan senyawa gas polutan tertentu yang berada pada udara bebas, seperti karbon-dioksida (CO2), karbon-monosikda (CO), hidrokarbon (LPG, LNG) , dan lain-lain. Pada sensor gas terdapat heater yang berfungsi untuk memicu sensor dapat bekerja mendeteksi objektivas tipe gas yang akan disensing.
+Pada sensor juga terdapat nilai resistansi yang berubah – ubah sesuai dengan nilai kepekatan gas yang akan disensing. Semakin tinggi nilai kepekatan  gas yang tersensing di udara bebas, semakin rendah nilai resistansi. Dan apabila semakin rendah nilai kepekatan gas yang tersensing di udara bebas, semakin tinggi nilai resistansi. MQ-2 yaitu sensor yang berfungsi untuk mendeteksi gas asap rokok dan gas yang mudah terbakar. Modul sensor ini sensitif untuk berbagai gas dan dapat digunakan pada ruangan dengan suhu kamar. Output dari modul ini adalah sinyal analog dan dapat dibaca dengan input analog (ADC) Arduino dan Data out yang memiliki keluaran logika 1 dan 0.
 
-
-ALAT DAN BAHAN :
-
-Arduino Uno
-Flame Sensor
-MQ 2 ( Digunakan untuk Pendeteksi Asap)
-Buzzer
-Led
-Resistor 470
-Kabel Jumper Secukupnya (male-female , male-male)
-Board
-Kabel USB printer
-
-
-TUTORIAL :
-
-Rangkai mq2 sensor , flame sensor, buzzer , LED , resistor, board dan Arduino dengan menghubungkannya menggunakan jumper .
-Pemasangan  MQ2 (A0,GND,vcc) – Arduino (A0,GND,5V)
-Pemasangan flame sensor (D0,GND,VCC) – arduino (8,GND,5V)
-Pemasangan buzzer (+,-) – arduino (9,GND)
-Pemasangan LED (10)
-Menyambungkan Arduino dengan laptop menggunakan kabel USB
-Menyusun algoritma program menggunakan Bahasa C pada IDE Arduino di laptop agar alat berjalan sesuai input dan output yang diinginkan
-Mendaftarkan akun twilio dan verifikasi WA
-    Buka www.twilio.com.
-    Daftar akun.
-    Verifikasi nomor Anda.
-    Kemudian navigasikan ke chatbot SMS.
-    Beri nama proyek Anda.
-    Diagram alir akan terbuka, tetapi karena kami menggunakan API Twilio untuk python, kami tidak memerlukannya untuk membuka SMS yang dapat diprogram.
-    Buka WhatsApp.
-    Aktifkan kotak pasir dengan masuk ke kotak pasir.
-    Kemudian Anda akan diberi nomor WhatsApp dan kode, Anda harus mengirim SMS dengan kode itu ke nomor tersebut.
-    Nomor Anda akan ditambahkan dan kemudian Anda harus pergi ke konsol dan menyalin SID Akun dan token autentikasi Anda.
-Membuat program python dengan fasilitas twilio untuk mengirimkan notifikasi melalui WA
-Install PySerial dan buat koneksi pada program python dengan arduino
-
-
-TESTING :
-
-Dari hasil percobaan Ketika Arduino dihubungkan dengan laptop , lalu program di compile dan dijalankan maka seluruh sensor yang terhubung siap untuk menerima input . 
-Ketika flame sensor diberikan input api , maka buzzer akan berbunyi dan LED akan menyala. 
-Ketika MQ2 sensor diberikan input berupa asap, maka buzzer akan berbunyi dan LED akan menyala.
-Ketika tidak ada input yang didekatkan dengan sensor maka buzzer dan LED akan mati.
-
-ketika testing menggunakan serial monitor, maka output yang ditampilkan dilengkapi dengan notifikasi adanya api ataukah asap. jika asap yang terdeteksi, maka outputnya diikuti dengan hasil pengukuran kepekatannya.
-ketika testing menggunakan python agar notifikasi terkirim melalui whatsapp , maka output notifikasi sama seperti pada serial monitor tersebut.
+Karakteristik sensor MQ-2
+1. Dapat mendeteksi gas LPG, i-butana, propana, metana, alkohol, hidrogen dan asap
+2. Memiliki dual signal output (analog output, and TTL level output)
+3. Range tegangan analog keluaran antara 0~5Vdc
+4. mempunyai kestabilan pembacaan yang bagus dan stabil
+5. Respon cepat dan sensitivitas tinggi
+6. Output dari sensor berupa Analog dan Digital
+7. rigger Level configuration
+8. Terdapat Potentiometer
+9. Dimensi module 32 x 20 mm
 
